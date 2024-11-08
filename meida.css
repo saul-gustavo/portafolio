@@ -46,24 +46,20 @@
 
     .iconos {
         gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
-    .redes-fixed .iconos .link-icono {
-        font-size: 1.5rem;
-    }
 }
 
 @media screen and (max-width: 678px) {
+
+    .hero {
+        min-height: 90vh;
+    }
+
     .cards {
         grid-template-columns: 1fr;
     }
 
-    .redes-fixed {
-        top: 30%;
-        left: 2%;
-    }
 }
 
 @media screen and (max-width: 500px) {
