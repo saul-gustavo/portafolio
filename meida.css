@@ -1,4 +1,24 @@
 @media screen and (max-width: 992px){
+    .hero {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .img-perfil {
+        width: 280px;
+        height: 280px;
+    }
+
+    .hero-content .hero-text {
+        text-align: center;
+    }
+
+    .botones {
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
     .card {
         padding: 1rem;
     }
@@ -60,6 +80,10 @@
         grid-template-columns: 1fr;
     }
 
+    .redes-fixed {
+        top: 40%;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -75,8 +99,17 @@
         font-size: 1rem;
     }
 
+    .redes-fixed {
+        top: 35%;
+    }
+
+    .botones {
+        display: grid;
+        margin-top: 1.3rem;
+    }
+
     .btn-con, .btn-cv {
-        padding: 0.6rem 3rem;
+        padding: 0.8rem 5rem;
     }
 
     .img-perfil {
@@ -93,5 +126,13 @@
     .uni, .cert, 
     .sub-sobre {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cards{
+        padding: 0;
+        margin: 0;
+        place-content: center;
     }
 }
