@@ -4,13 +4,17 @@
     --bg-btn-cv: #B1CCC4;
     --iconos: #B1CCC4;
     --white: #fff;
+    --field-input: #000000e8;
     --light-mode: #f0eff4;
-    --transition: .3s ease;
+    --transition: all .3s ease;
     --shadow: 10px 10px 18px rgba(0, 0, 0, 0.9),
                 -10px -10px 18px rgba(255, 255, 255, 0.3);
 
     --shadow-hover: 8px 8px 18px rgba(0, 0, 0, 0.5), 
                 -8px -8px 18px rgba(255, 255, 255, 0.2);
+
+    --shadow-inset: inset 8px 8px 18px rgba(0, 0, 0, 0.5),
+                inset -8px -8px 18px rgba(255, 255, 255, 0.1);
 }
 
 *, 
@@ -192,17 +196,12 @@ body.dark {
     box-shadow: var(--shadow);
     background-color: var(--bg-body);
     color: #fff;
-    transition: var(--transition);
 }
 
-.btn-con:hover {
-    box-shadow: var(--shadow-hover);
-}
-
+.btn-con:hover, 
 .btn-cv:hover {
-    box-shadow: var(--shadow-hover);
-}
-
+    box-shadow: var(--shadow-inset);
+ }
 
 /* iconos flotantes */
 
@@ -443,7 +442,7 @@ body.dark {
     width: 100%;
     margin: 3rem auto;
     display: grid;
-    gap: 2rem;
+    gap: 2.2rem;
     max-width: 600px;
 }
 
@@ -451,12 +450,13 @@ body.dark {
 .input-email, 
 .input-text, 
 .input-msj {
-    background-color: #000000e8;
+    background-color: var(--field-input);
     padding: 1rem 1.2rem;
     box-shadow: var(--shadow);
     border: none;
     color: var(--white);
     outline: none;
+    font-size: 1rem;
     border-radius: 10px;
 }
 
@@ -470,8 +470,12 @@ body.dark {
     margin: 0 auto;
     border: none;
     border-radius: 30px;
-    background-color: var(--bg-btn-cv);
-    color: black;
+    background-color: var(--bg-body);
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    box-shadow: var(--shadow-inset);
 }
 
 .copy {
