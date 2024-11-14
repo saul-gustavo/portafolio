@@ -14,7 +14,7 @@
                 -8px -8px 18px rgba(255, 255, 255, 0.2);
 
     --shadow-inset: inset 8px 8px 18px rgba(0, 0, 0, 0.5),
-                inset -8px -8px 18px rgba(255, 255, 255, 0.1);
+                    inset -8px -8px 18px rgba(255, 255, 255, 0.1);
 }
 
 *, 
@@ -29,30 +29,24 @@
 body {
     background-color: var(--bg-body);
     color: var(--white);
-}
-
-body.dark {
-    background-color: var(--light-mode);
-}
-
-.header .dark {
-    background-color: var(--light-mode);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    overflow: hidden;
 }
 
 .header {
-    background-color: #120e1dd7;
-    padding: 0.8rem 4rem;
+    background-color: #120e1d;
+    padding: 0.8rem 5rem;
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
+    backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -92,7 +86,7 @@ body.dark {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #1d4ed8;
+    background-color: #e14107;
     transition: all 0.3s ease;
 }
 
@@ -105,13 +99,47 @@ body.dark {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.icono-dark {
+    background-color: transparent;
+    border: none;
     cursor: pointer;
 }
 
-.btn-toggle #moon {
+.icono-dark #icono {
     font-size: 1.5rem;
     color: var(--white);
 }
+
+/* modo oscuro */
+
+body.dark {
+    background-color: var(--light-mode);
+}
+
+body.dark .title,
+body.dark .btn-link-more,
+body.dark .link-icono,
+body.dark .cert,
+body.dark .mode, 
+body.dark .copy-text {
+    color: #000;
+}
+
+body.dark .btn-con{
+    background-color: var(--light-mode);
+    color: #000;
+}
+
+body.dark .btn-cv {
+    background-color: var(--light-mode);
+    color: #000;
+}
+
+
+
+/* menu ham */
 
 .menu-toggle {
     display: none;
@@ -146,17 +174,15 @@ body.dark {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 3rem;
-    padding-inline: 2rem;
 }
 
 .img-perfil {
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
     display: block;
     margin: 4.5rem auto 0rem;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: var(--shadow);
 }
 
 .hero-content .hero-text {
@@ -179,7 +205,7 @@ body.dark {
 .hero-desc {
     font-size: 1.2rem;
     line-height: 1.5;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .botones {
@@ -207,7 +233,7 @@ body.dark {
 
 .redes-fixed {
     position: absolute;
-    bottom: 2rem;
+    bottom: 15%;
     left: 1%;
 }
 
@@ -234,15 +260,13 @@ body.dark {
 /* sobre mi */
 
 .sobre-mi {
-    padding: 10px;
-    min-height: 100vh;
+    min-height: 50vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    gap: 3rem;
-    margin: 4rem auto;
+    gap: 3rem; 
 }
 
 .text-sobre {
@@ -304,6 +328,11 @@ body.dark {
     padding: 6px;
     display: block;
     object-fit: cover;
+    background-color: var(--bg-body);
+}
+
+.skill-img:hover {
+    box-shadow: var(--shadow-inset);
 }
 
 /* seccion proyectos */
@@ -350,11 +379,10 @@ body.dark {
     box-shadow: var(--shadow);
     border-radius: 20px;
     padding: 1rem;
-    transition: var(--transition);
 }
 
 .card:hover {
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow-inset);
 }
 
 .card-texto {
@@ -397,7 +425,6 @@ body.dark {
     padding: 3px;
 }
 
-
 .proyectos .boton-more{
     display: flex;
     align-items: center;
@@ -405,18 +432,17 @@ body.dark {
     margin: 2rem auto;
 }
 
-.boton-more .btn-more {
-    padding: 0.7rem 3rem;
-    border: none;
-    background-color: var(--bg-btn-con);
-    border-radius: 30px;
-    font-size: 1.2rem;
+.btn-link-more {
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 4rem;
     box-shadow: var(--shadow);
+    color: var(--white);
+    border-radius: 30px;
 }
 
-.btn-more .btn-link-more {
-    text-decoration: none;
-    color: black;
+.btn-link-more:hover {
+    box-shadow: var(--shadow-inset);
 }
 
 /* footer */
@@ -450,7 +476,7 @@ body.dark {
 .input-email, 
 .input-text, 
 .input-msj {
-    background-color: var(--field-input);
+    background-color: var(--bg-body);
     padding: 1rem 1.2rem;
     box-shadow: var(--shadow);
     border: none;
@@ -476,6 +502,31 @@ body.dark {
 
 .btn-submit:hover {
     box-shadow: var(--shadow-inset);
+}
+
+.foo-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.foo-iconos {
+    display: flex;
+    gap: 2rem;
+}
+
+.foo-iconos .link-icono {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: 5px;
+    box-shadow: var(--shadow-inset);
+    transition: var(--transition);
+}
+
+.foo-iconos .link-icono:hover {
+    color: var(--bg-btn-cv);
 }
 
 .copy {

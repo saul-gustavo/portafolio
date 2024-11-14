@@ -15,7 +15,7 @@
     <title>Portafolio Saul Gustavo A. S. | Web</title>
 </head>
 
-<body class="body">
+<body id="body">
     <!-- seccion header y nav -->
     <header class="header">
         <nav class="nav">
@@ -31,10 +31,12 @@
             </ul>
 
             <div class="btn-toggle">
-                <div class="icono-dark">
-                    <i class="fa fa-moon" id="moon"></i>
+
+                <button class="icono-dark" id="btn-dark">
+                    <i class="fa fa-moon" id="icono"></i>
                     <!-- <i class="fa fa-sun" id="sun"></i> -->
-                </div>
+                </button>
+
                 <div class="menu-toggle">
                     <span class="line one"></span>
                     <span class="line two"></span>
@@ -52,12 +54,11 @@
 
         <div class="hero-content">
 
-            <div class="hero-text">
+            <div class="hero-text mode">
                 <h1 class="hero-title">¡Hola soy Saúl!</h1>
                 <h2 class="hero-sub">Desarrollador Web Frontend</h2>
-                <p class="hero-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium eos
-                    maxime ad
-                    beatae adipisci perferendis ab recusandae magni non.</p>
+                <p class="hero-desc">Soy un estudiante autodidacta enfocado en el Desarrollador Web Frontend, creo
+                    interfaces minimalistas y funcioanles que combienen diseño y tecnología.</p>
             </div>
 
             <div class="redes-fixed">
@@ -84,22 +85,27 @@
 
     <!-- seccion sobre mi -->
 
-    <section class="sobre-mi container" id="sobre-mi">
-        <div class="text-sobre">
+    <div class="sobre-mi container" id="sobre-mi">
+        <div class="text-sobre mode">
             <h2 class="title-sobre title">Sobre mí</h2>
             <p class="sub-sobre sub">
                 Estudiante autodidacta en Desarrollo Web Frontend con enfoque en la creación de interfaces minimalistas
                 y
-                funcionales. Apasionado por el aprendizaje continuo y por aplicar conocimientos para mejorar la
+                funcionales. Llevo un aprendizaje continuo y aplico mis conocimientos para mejorar la
                 experiencia web. Busco participar en proyectos innovadores donde pueda integrar diseño y
                 tecnología para ofrecer soluciones efectivas.
+                <br>
+                Desde hace unos años me ha gustado todo lo relacionado con la informática, empecé a tomar cursos de
+                HTML5 y CSS3 en YouTube y en Udemy, aprende a hacer páginas web con estas tecnologías, no fue hasta el
+                primer año de la carrera de Ing. Sistemas que tuve contacto con lenguajes de programación como Java, C y
+                Python, también aprendí de forma autodidacta un poco de Bases de Datos con SQL.
             </p>
         </div>
 
         <div class="educacion container">
-            <h1 class="title-edu">Educación</h1>
+            <h1 class="title-edu title">Educación</h1>
 
-            <div class="edu-left">
+            <div class="edu-left mode">
                 <div class="edu-certi">
                     <p class="uni">
                         Ing. Sistemas Computacionales en Universidad Tres Culturas <span class="date">Sep. 2019 a Ago.
@@ -114,7 +120,7 @@
             </div>
 
             <div class="edu-right">
-                <h2 class="title-edu">Habilidades</h2>
+                <h2 class="title-edu title">Habilidades</h2>
                 <div class="iconos">
                     <img src="./assets/icons8-html.svg" alt="icono html5" class="skill-img">
                     <img src="./assets/icons8-css3.svg" alt="icono css3" class="skill-img">
@@ -126,19 +132,19 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
     <!-- seccion proyectos -->
 
     <section class="proyectos container" id="proyectos">
-        <h2 class="pro-title">Proyectos</h2>
+        <h2 class="pro-title title">Proyectos</h2>
         <div class="cards">
 
             <article class="card-one card">
                 <figure class="imagen-card">
                     <img src="./assets/faq-acordion.jpg" alt="faq accordion" class="img-card resol">
                 </figure>
-                <div class="card-texto">
+                <div class="card-texto mode">
                     <h3 class="card-title">FAQ Acordion</h3>
                     <p class="card-sub">
                         Seccion de preguntas con un diseño de acordion, el diseño se adapta a dispositivos mobiles.
@@ -156,7 +162,7 @@
 
             <article class="card-two card">
                 <img src="./assets/qr-code.jpg" alt="qr code card" class="img-card">
-                <div class="card-texto">
+                <div class="card-texto mode">
                     <h3 class="card-title">Qr Code Card</h3>
                     <p class="card-sub">
                         Tarjeta con una imagen de codigo QR, con un simple diseño adaptable a dispositivos mobiles.
@@ -174,7 +180,7 @@
 
             <article class="card-three card">
                 <img src="./assets/testimonial-grid.jpg" alt="testimonial grid" class="img-card">
-                <div class="card-texto">
+                <div class="card-texto mode">
                     <h3 class="card-title">Seccion Testimonial Bento Grid</h3>
                     <p class="card-sub">
                         Sección testimonial creada con CSS Gird y Grid Areas, usando un diseño caracteristico de Bento
@@ -195,7 +201,7 @@
 
             <article class="card-four card">
                 <img src="./assets/newsletter-sign.jpg" alt="" class="img-card">
-                <div class="card-texto">
+                <div class="card-texto mode">
                     <h3 class="card-title">Newsletter Sign Up</h3>
                     <p class="card-sub">
                         Seccion para suscribirse a un Newsletter, este proyecto cuenta con una validacion de correo
@@ -216,16 +222,15 @@
         </div>
 
         <div class="boton-more">
-            <button class="btn-more">
-                <a href="#" target="_blank" class="btn-link-more">Ver mas</a>
-            </button>
+            <a href="#" target="_blank" class="btn-link-more">Ver mas</a>
         </div>
     </section>
 
     <footer class="footer container" id="contacto">
-        <div class="foo-top">
-            <h2 class="foo-title">Contactame</h2>
-            <p class="foo-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt fuga qui
+        <div class="foo-top mode">
+            <h2 class="foo-title title">Contactame</h2>
+            <p class="foo-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt fuga
+                qui
                 sapiente.
                 Maxime, vel.</p>
         </div>
@@ -238,6 +243,20 @@
             </form>
         </div>
 
+        <div class="foo-redes">
+            <div class="foo-iconos">
+                <a href="https://github.com/Saul-Gustavo" class="link-icono" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://twitter.com/Gust4av3txc01" class="link-icono" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/saul-dev/" class="link-icono" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
         <div class="copy">
             <p class="copy-text">Creado por Saul Gustavo A. S.</p>
         </div>
@@ -246,6 +265,7 @@
 
 
     <script src="./main.js"></script>
+    <script src="./darkMode.js"></script>
 </body>
 
 </html>

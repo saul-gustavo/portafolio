@@ -1,12 +1,19 @@
+@media screen and (max-width: 1024px) {
+    .redes-fixed {
+        bottom: 0;
+    }
+}
+
 @media screen and (max-width: 992px){
     .hero {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        gap: 0rem;
     }
 
     .img-perfil {
-        width: 280px;
-        height: 280px;
+        width: 350px;
+        height: 350px;
     }
 
     .hero-content .hero-text {
@@ -110,6 +117,7 @@
 
     .btn-con, .btn-cv {
         padding: 0.8rem 5rem;
+        width: 100%;
     }
 
     .img-perfil {
