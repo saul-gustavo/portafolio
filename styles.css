@@ -36,15 +36,15 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .header {
-    background-color: #120e1d;
-    padding: 0.8rem 5rem;
+    background-color: #120e1dd7;
+    padding: 0 5rem;
     position: fixed;
     top: 0;
     z-index: 10;
+    height: 80px;
     width: 100%;
     backdrop-filter: blur(10px);
 }
@@ -137,8 +137,6 @@ body.dark .btn-cv {
     color: #000;
 }
 
-
-
 /* menu ham */
 
 .menu-toggle {
@@ -148,7 +146,7 @@ body.dark .btn-cv {
 .menu-toggle .line {
     background-color: var(--white);
     width: 100%;
-    height: 2px;
+    height: 3px;
     transition: var(--transition);
 }
 
@@ -260,7 +258,7 @@ body.dark .btn-cv {
 /* sobre mi */
 
 .sobre-mi {
-    min-height: 50vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -522,11 +520,11 @@ body.dark .btn-cv {
     color: var(--white);
     padding: 5px;
     box-shadow: var(--shadow-inset);
-    transition: var(--transition);
+    transition: all .3s ease;
 }
 
 .foo-iconos .link-icono:hover {
-    color: var(--bg-btn-cv);
+    box-shadow: var(--shadow);
 }
 
 .copy {
@@ -535,5 +533,5 @@ body.dark .btn-cv {
 
 .copy-text {
     font-size: 1.2rem;
-    color: var(--bg-btn-con);
+    color: var(--white);
 }
