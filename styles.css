@@ -47,6 +47,7 @@ body {
     height: 80px;
     width: 100%;
     backdrop-filter: blur(10px);
+    display: flex;
 }
 
 .nav {
@@ -57,8 +58,8 @@ body {
 }
 
 .logo-container .img-logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: block;
     margin: 0 auto;
     border-radius: 50%;
@@ -225,34 +226,6 @@ body.dark .btn-cv {
     box-shadow: var(--shadow-inset);
 }
 
-/* iconos flotantes */
-
-.redes-fixed {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-}
-
-.redes-fixed .iconos {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-}
-
-.iconos .link-icono {
-    text-decoration: none;
-    color: var(--iconos);
-    font-size: 1.5rem;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow);
-}
-
-
 /* sobre mi */
 
 .sobre-mi {
@@ -263,6 +236,7 @@ body.dark .btn-cv {
     justify-content: space-between;
     flex-direction: column;
     gap: 3rem;
+    margin: 5rem auto;
 }
 
 .text-sobre {
@@ -336,7 +310,7 @@ body.dark .btn-cv {
 
 .proyectos {
     min-height: 100vh;
-    margin: 3rem auto;
+    margin: 5rem auto;
 }
 
 .pro-title {
@@ -347,10 +321,10 @@ body.dark .btn-cv {
 
 .cards {
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 }
+
 
 .btn-link {
     text-align: center;
