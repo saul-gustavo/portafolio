@@ -235,7 +235,6 @@ body.dark .btn-cv {
     justify-content: space-between;
     flex-direction: column;
     gap: 3rem;
-    border: 1px solid red;
 }
 
 .text-sobre {
@@ -309,7 +308,6 @@ body.dark .btn-cv {
 /* seccion proyectos */
 .proyectos {
     min-height: 100vh;
-    border: 1px solid red;
     margin-bottom: 3em;
     margin-top: 5em;
 }
@@ -425,7 +423,6 @@ body.dark .btn-cv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .foo-top {
