@@ -98,6 +98,10 @@
         grid-template-columns: 1fr;
         gap: 1.4rem;
     }
+
+    .footer {
+        padding: 1rem 2rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
