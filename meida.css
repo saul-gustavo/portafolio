@@ -1,9 +1,3 @@
-@media screen and (max-width: 1024px) {
-    .redes-fixed {
-        bottom: 0;
-    }
-}
-
 @media screen and (max-width: 992px){
 
     .header {
@@ -12,14 +6,14 @@
 
     .hero {
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
         gap: 1rem;
-        margin-top: 2rem;
     }
 
     .img-perfil {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 
     .hero-content .hero-text {
@@ -33,7 +27,7 @@
     }
 
     .sobre-mi {
-        margin: 9rem auto;
+        margin: 2rem auto;
     }
 
     .card {
@@ -82,22 +76,25 @@
     }
 
     .iconos {
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .sobre-mi {
         min-height: 100vh;
-        margin: 5rem auto;
+        margin: 1rem auto;
     }
 
-}
-
-@media screen and (max-width: 678px) {
+    .edu-certi {
+        text-align: center;
+    }
 
     .cards {
         grid-template-columns: 1fr;
-        gap: 1.4rem;
+        gap: 3rem;
     }
+}
+
+@media screen and (max-width: 678px) {
 
     .footer {
         padding: 1rem 2rem;
@@ -128,8 +125,8 @@
     }
 
     .img-perfil {
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
     }
 
     .title-edu,
@@ -145,6 +142,11 @@
 }
 
 @media screen and (max-width: 375px) {
+    .img-perfil {
+        width: 240px;
+        height: 240px;
+    }
+
     .cards{
         padding: 0;
         margin: 0;

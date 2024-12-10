@@ -41,7 +41,6 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .header {
@@ -200,7 +199,7 @@ body.dark .btn-cv {
     width: 380px;
     height: 380px;
     display: block;
-    margin: 4.5rem auto 0rem;
+    margin: 3rem auto;
     object-fit: cover;
     border-radius: 50%;
 }
