@@ -1,0 +1,157 @@
+@media screen and (max-width: 992px){
+
+    .header {
+        padding: 0 3rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .img-perfil {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-content .hero-text {
+        text-align: center;
+    }
+
+    .botones {
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .sobre-mi {
+        margin: 2rem auto;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        top: 80px;
+        right: 0;
+        width: 40%;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px) saturate(100%) contrast(100%);
+    }
+
+    .nav-menu.active {
+        transform: scale(1);
+        pointer-events: all;
+        opacity: 1;
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        gap: 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .iconos {
+        gap: 2rem;
+    }
+
+    .sobre-mi {
+        min-height: 100vh;
+        margin: 1rem auto;
+    }
+
+    .edu-certi {
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 678px) {
+
+    .footer {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-sub {
+        font-size: 1.3rem;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+    }
+
+    .botones {
+        display: grid;
+        margin-top: 1.3rem;
+    }
+
+    .btn-con, .btn-cv {
+        padding: 0.8rem 5rem;
+        width: 100%;
+    }
+
+    .img-perfil {
+        width: 280px;
+        height: 280px;
+    }
+
+    .title-edu,
+    .title-sobre, 
+    .pro-title {
+        font-size: 1.2rem;
+    }
+
+    .uni, .cert, 
+    .sub-sobre {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .img-perfil {
+        width: 240px;
+        height: 240px;
+    }
+
+    .cards{
+        padding: 0;
+        margin: 0;
+        place-content: center;
+    }
+}
