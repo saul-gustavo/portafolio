@@ -47,13 +47,14 @@
         position: absolute;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         pointer-events: none;
+        padding: 1rem;
         top: 80px;
         right: 0;
-        width: 40%;
         height: 250px;
-        background-color: rgba(255, 255, 255, 0.2);
+        width: 40%;
+        background-color: rgba(65, 65, 65, 0.7);
         backdrop-filter: blur(10px) saturate(100%) contrast(100%);
     }
 
