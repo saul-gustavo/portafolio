@@ -54,7 +54,7 @@
         right: 0;
         height: 250px;
         width: 40%;
-        background-color: rgba(65, 65, 65, 0.7);
+        background-color: rgba(65, 65, 65, 0.88);
         backdrop-filter: blur(10px) saturate(100%) contrast(100%);
     }
 
