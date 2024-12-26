@@ -307,6 +307,11 @@ body {
     text-decoration: none;
     color: var(--white);
     width: fit-content;
+    transition: all .3s ease;
+}
+
+.cert:hover {
+    color: #797878;
 }
 
 .title-edu {
