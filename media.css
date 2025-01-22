@@ -1,149 +1,54 @@
-@media screen and (max-width: 992px){
+@media screen and (max-width: 768px) {
+
     .hero {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 2rem;
+        min-height: 50vh;
     }
 
-    .hero-content .hero-text {
+    .hero .img-perfil {
+        max-width: 200px;
+    }
+
+    .hero-title, .hero-sub {
         text-align: center;
     }
 
-    .botones {
-        align-items: center;
+    .hero .hero-text .social-hero {
         justify-content: center;
-        gap: 2rem;
-    }
-
-    .sobre-mi {
-        margin: 2rem auto;
+        gap: 1rem;
     }
 
     .card {
-        padding: 1rem;
-    }
-}
-
-@media screen and (max-width: 768px){
-
-    .header {
-        padding: 1rem 2rem;
-    }
-
-    .nav-menu {
-        display: none;
-        position: absolute;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        pointer-events: none;
-        padding: 1rem;
-        top: 60px;
-        left: 0;
-        right: 0;
-        height: auto;
-        width: 100%;
-        border-radius: 10px;
-        background-color: rgba(1, 1, 1, 0.88);
-        backdrop-filter: blur(10px) saturate(100%) contrast(100%);
     }
 
-    .nav-menu.active {
-        transform: scale(1);
-        pointer-events: all;
-        opacity: 1;
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 24px;
-        height: 24px;
-        gap: 5px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .iconos {
-        gap: 2rem;
-    }
-
-    .sobre-mi {
-        min-height: 100vh;
-        margin: 1rem auto;
-    }
-
-    .edu-certi {
+    .card-title, .card-sub,
+    .card-tools, .links-card, 
+    .plataforma {
         text-align: center;
+        justify-content: center;
     }
 
-    .cards {
+    .cards-bottom {
         grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-}
-
-@media screen and (max-width: 678px) {
-
-    .footer {
-        padding: 1rem 2rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .nav {
-        width: 100%;
     }
 
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-sub {
-        font-size: 1.3rem;
-    }
-
-    .hero-desc {
-        font-size: 1rem;
-    }
-
-    .botones {
-        display: grid;
-        margin-top: 1.3rem;
-    }
-
-    .btn-con, .btn-cv {
-        padding: 0.8rem 5rem;
-        width: 100%;
-    }
-
-    .title-edu,
-    .title-sobre, 
-    .pro-title {
-        font-size: 1.2rem;
-    }
-
-    .uni, .cert, 
-    .sub-sobre {
-        font-size: 1rem;
+    .footer .inputs-top {
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .cards{
-        padding: 0;
-        margin: 0;
-        place-content: center;
+
+    .hero {
+        padding: 2rem 0rem;
     }
 
-    .footer {
-        padding: 1rem;
+    .social-hero {
+        flex-wrap: wrap;
+    }
+
+    .links-card {
+        flex-wrap: wrap;
     }
 }

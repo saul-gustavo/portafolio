@@ -14,253 +14,193 @@
     <!-- iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo-2.jpg" type="image/x-icon">
     <!-- Animaciones -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>Portafolio Saul Gustavo A. S. | Web</title>
 </head>
 
 <body id="body">
-    <!-- seccion header y nav -->
-    <div class="wave-bg"></div>
-    <header class="header">
+    <!-- seccion header y nav-->
+    <span class="wave-bg"></span>
+    <span class="wave-bg"></span>
+
+    <header class="header container">
         <nav class="nav">
             <figure class="logo-container">
-                <img src="./assets/logo.jpg" alt="logo imagen" class="img-logo">
+                <img src="./assets/logo-2.jpg" alt="logo imagen" class="img-logo">
             </figure>
-
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mi</a></li>
-                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
-
-            <div class="menu-toggle">
-                <span class="line one"></span>
-                <span class="line two"></span>
-                <span class="line three"></span>
-            </div>
+            <button class="mode-toggle">
+                <i class="fa-solid fa-moon" id="icon-moon"></i>
+                <i class="fa-solid fa-sun" id="icon-sun"></i>
+            </button>
         </nav>
     </header>
 
     <!-- seccion hero -->
 
-    <section class="hero container" id="hero" data-aos="fade-up">
-
+    <section class="hero container" id="hero">
         <img src="./assets/imagen-perfil.jpg" alt="imagen perfil" class="img-perfil">
-
         <div class="hero-content">
-
             <div class="hero-text mode">
-                <h1 class="hero-title">¡Hola soy Saúl!</h1>
-                <h2 class="hero-sub">Desarrollador Web Frontend</h2>
-                <p class="hero-desc">Soy un estudiante autodidacta enfocado en el Desarrollador Web Frontend, creo
-                    interfaces minimalistas y funcionales que combinen diseño y tecnología. </p>
-            </div>
-
-            <div class="botones">
-                <a href="#contacto" class="btn-con">Contacto</a>
-                <a href="./assets/saul-cv.pdf" class="btn-cv" target="_blank">Ver CV</a>
+                <h1 class="hero-title">Saúl Gustavo A. S.</h1>
+                <p class="hero-sub">Desarrollador Web Frontend y Diseñador UX/UI</p>
+                <div class="social-hero">
+                    <a href="https://github.com/Saul-Gustavo" class="link-icono" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/Gust4av3txc01" class="link-icono" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saul-dev/" class="link-icono" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="./assets/saul-cv.pdf" class="btn-cv" target="_blank">Ver CV</a>
+                </div>
             </div>
         </div>
 
     </section>
 
+    <div class="line container"></div>
+
     <!-- seccion sobre mi -->
 
-    <div class="sobre-mi container" id="sobre-mi" data-aos="fade-up">
+    <div class="sobre-mi container" id="sobre-mi">
         <div class="text-sobre mode">
-            <h2 class="title-sobre title">Sobre mí</h2>
+            <h1 class="title-sobre title">Sobre mí
+                <span class="icono-top"><i class="fa-solid fa-user"></i></span>
+            </h1>
             <p class="sub-sobre sub">
-                Estudiante autodidacta en Desarrollo Web Frontend con enfoque en la creación de interfaces minimalistas
-                y
-                funcionales. Llevo un aprendizaje continuo y aplico mis conocimientos para mejorar la
-                experiencia web. Busco participar en proyectos innovadores donde pueda integrar diseño y
-                tecnología para ofrecer soluciones efectivas.
-                <br><br>
-                Desde hace unos años me ha gustado todo lo relacionado con la informática, empecé a tomar cursos de
-                HTML5 y CSS3 en YouTube y en Udemy, aprendí a hacer páginas web con estas tecnologías; no fue hasta el
-                primer año de la carrera de Ing. Sistemas que tuve contacto con lenguajes de programación como Java, C y
-                Python y bases de Datos con SQL.
+                Estudiante autodidacta en Desarrollo Web Frontend y Diseño UX/UI, con enfoque en la creación de
+                interfaces minimalistas, funcionales y centradas en el usuario. Llevo un aprendizaje continuo y aplico
+                mis conocimientos para mejorar tanto la experiencia web como la usabilidad. Busco participar en
+                proyectos innovadores donde pueda integrar diseño y tecnología para ofrecer soluciones efectivas y
+                atractivas.
             </p>
-        </div>
-
-        <div class="educacion container" data-aos="fade-up">
-            <h1 class="title-edu title">Educación</h1>
-
-            <div class="edu-left mode">
-                <div class="edu-certi">
-                    <p class="uni">
-                        Ing. Sistemas Computacionales en Universidad Tres Culturas <span class="date">Sep. 2019 a Ago.
-                            2020</span>
-                    </p>
-                    <a href="https://www.freecodecamp.org/certification/SaulGustavo/responsive-web-design" class="cert"
-                        target="_blank">Certificado Desarrollo Web con HTML5 y CSS3 <span class="date">
-                            -- FreeCodeCamp</span></a>
-                    <a href="https://www.freecodecamp.org/certification/SaulGustavo/javascript-algorithms-and-data-structures"
-                        class="cert" target="_blank">Certificado Algoritmos y Estrucutra de Datos con
-                        JavaScript <span class="date"> -- FreeCodeCamp</span></a>
-                </div>
-            </div>
-
-            <div class="edu-right" data-aos="fade-up">
-                <h2 class="title-edu title">Habilidades</h2>
-                <div class="iconos">
-                    <figure class="icon-content">
-                        <img src="./assets/icons8-html.svg" alt="icono html5" class="skill-img">
-                        <h4 class="icon-texto">HTML5</h4>
-                    </figure>
-
-                    <figure class="icon-content">
-                        <img src="./assets/icons8-css3.svg" alt="icono css3" class="skill-img">
-                        <h4 class="icon-texto">CSS3</h4>
-                    </figure>
-
-                    <figure class="icon-content">
-                        <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="skill-img">
-                        <h4 class="icon-texto">JavaScript</h4>
-                    </figure>
-
-                    <figure class="icon-content">
-                        <img src="./assets/icon-react..svg" alt="icono react" class="skill-img">
-                        <h4 class="icon-texto">React</h4>
-                    </figure>
-
-                    <figure class="icon-content">
-                        <img src="./assets/icon-github-white.svg" alt="icono github" class="skill-img">
-                        <h4 class="icon-texto">Github</h4>
-                    </figure>
-
-                    <figure class="icon-content">
-                        <img src="./assets/icons8-figma.svg" alt="icono figma" class="skill-img">
-                        <h4 class="icon-texto">Figma</h4>
-                    </figure>
-
-                </div>
-            </div>
-
         </div>
     </div>
 
     <!-- seccion proyectos -->
 
     <section class="proyectos container" id="proyectos">
-        <h2 class="pro-title title">Proyectos</h2>
+        <h1 class="pro-title title">Proyectos
+            <span class="icono-top"><i class="fa-solid fa-code"></i></span>
+        </h1>
+
         <div class="cards">
 
             <article class="card-one card" data-aos="zoom-in">
-                <figure class="imagen-card">
-                    <img src="./assets/faq-acordion.jpg" alt="faq accordion" class="img-card resol">
-                </figure>
-                <div class="card-texto mode">
+                <img src="./assets/faq-acordion.jpg" alt="faq accordion" class="img-card resol">
+                <div class="card-content mode">
                     <h3 class="card-title">FAQ Acordion</h3>
                     <p class="card-sub">
                         Sección de preguntas con un diseño de acordeón. El diseño se adapta a dispositivos móviles.
-                        <span class="dedica">Proyecto de FrontendMentor.io</span>
                     </p>
                     <div class="card-tools">
                         <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
                         <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
                         <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
                     </div>
+
+                    <div class="links-card">
+                        <a href="https://saul-gustavo.github.io/faq-accordion-page/" class="btn-web"
+                            target="_blank">Sitio web
+                            <span class="i-card">
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </a>
+
+                        <a href="#" class="code-link">Ver Código
+                            <span class="i-card">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <a href="https://saul-gustavo.github.io/faq-accordion-page/" class="btn-link" target="_blank">Ver
-                    Proyecto</a>
+
             </article>
 
             <article class="card-two card" data-aos="zoom-in">
-                <img src="./assets/qr-code.jpg" alt="qr code card" class="img-card">
-                <div class="card-texto mode">
-                    <h3 class="card-title">Qr Code Card</h3>
-                    <p class="card-sub">
-                        Tarjeta con una imagen de código QR, con un simple diseño adaptable a dispositivos móviles.
-                        <span class="dedica">Proyecto de FrontendMentor.io</span>
-
-                    </p>
-                    <div class="card-tools">
-                        <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
-                        <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                    </div>
-                </div>
-                <a href="https://saul-gustavo.github.io/qr-code-card/" class="btn-link" target="_blank">Ver
-                    Proyecto</a>
-            </article>
-
-            <article class="card-three card" data-aos="zoom-in">
-                <img src="./assets/testimonial-grid.jpg" alt="testimonial grid" class="img-card">
-                <div class="card-texto mode">
-                    <h3 class="card-title">Sección Testimonial Bento Grid</h3>
-                    <p class="card-sub">
-                        Sección testimonial creada con CSS Gird y Grid Áreas, usando un diseño característico de Bento
-                        Grid para este proyecto. Cuenta con un diseño responsivo que se adapta a cualquier dispositivo,
-                        ya sea PC, Tablet o teléfono móvil.
-                        <span class="dedica">Proyecto de FrontendMentor.io</span>
-
-                    </p>
-                    <div class="card-tools">
-                        <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
-                        <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                    </div>
-                </div>
-                <a href="https://saul-gustavo.github.io/Testimonial-grid/" class="btn-link" target="_blank">Ver
-                    Proyecto</a>
-            </article>
-
-            <article class="card-four card" data-aos="zoom-in">
-                <img src="./assets/newsletter-sign.jpg" alt="" class="img-card">
-                <div class="card-texto mode">
+                <img src="./assets/newsletter-sign.jpg" alt="newsletter sign" class="img-card">
+                <div class="card-content mode">
                     <h3 class="card-title">Newsletter Sign Up</h3>
                     <p class="card-sub">
                         Sección para suscribirse en un Newsletter. Este proyecto cuenta con una validación de correo
-                        Electrónico con JavaScript, el diseño es adaptable para cualquier dispositivo, ya sea PC, Tablet
-                        o
-                        Teléfono móvil.
-                        <span class="dedica">Proyecto de FrontendMentor.io</span>
+                        Electrónico con JavaScript.
                     </p>
+
                     <div class="card-tools">
                         <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
                         <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                        <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
+                    </div>
+
+                    <div class="links-card">
+                        <a href="https://saul-gustavo.github.io/qr-code-card/" class="btn-web" target="_blank">Sitio Web
+                            <span class="i-card">
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="code-link">Ver Código
+                            <span class="i-card">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                        </a>
                     </div>
                 </div>
-                <a href="https://saul-gustavo.github.io/Newsletter-sign-up/" class="btn-link" target="_blank">Ver
-                    Proyecto</a>
             </article>
-        </div>
 
-        <div class="boton-more">
-            <a href="https://saul-gustavo.github.io/proyectos-frontendmentor/" target="_blank" class="btn-link-more">Ver
-                más</a>
+            <div class="cards-bottom">
+                <a href="#" class="card-link">
+                    <article class="card-bottom">
+                        <h3 class="card-title">Proyectos FrontendMentor.io</h3>
+                        <p class="card-sub">Estos son todos los proyectos que eh hecho de la plataforma
+                            FrontendMentor.io</p>
+                        <div class="plataforma">
+                            <p class="plat-name">FrontendMentor.io</p>
+                            <div class="card-tools">
+                                <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
+                                <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
+                                <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="card-link">
+                    <article class="card-bottom">
+                        <h3 class="card-title">Proyectos FrontendMentor.io</h3>
+                        <p class="card-sub">Estos son todos los proyectos que eh hecho de la plataforma
+                            FrontendMentor.io</p>
+                        <div class="plataforma">
+                            <p class="plat-name">FrontendMentor.io</p>
+                            <div class="card-tools">
+                                <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
+                                <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
+                                <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="footer container" id="contacto" data-aos="fade-up">
         <div class="foo-top mode">
-            <h2 class="foo-title title">Contactame</h2>
-            <p class="foo-sub">Trabajemos juntos en tu idea para hacerla realidad y destacar en el mundo digital.</p>
+            <h1 class="foo-title title">Contactame
+                <span class="icono-top"><i class="fa-solid fa-envelope"></i></span>
+            </h1>
         </div>
         <div class="footer-contact">
             <form class="form-contact">
-                <input type="text" class="form-input input-text" placeholder="Nombre | Name">
-                <input type="email" class="form-input input-email" placeholder="Correo electronico | Email" required>
+                <div class="inputs-top">
+                    <input type="text" class="form-input input-text" placeholder="Nombre | Name">
+                    <input type="email" class="form-input input-email" placeholder="Correo electronico | Email"
+                        required>
+                </div>
                 <textarea name="textarea" id="mensaje" class="input-msj" placeholder="Mensaje | Message"></textarea>
                 <button class="btn-submit" type="submit">Enviar</button>
             </form>
-        </div>
-
-        <div class="foo-redes">
-            <div class="foo-iconos">
-                <a href="https://github.com/Saul-Gustavo" class="link-icono" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://twitter.com/Gust4av3txc01" class="link-icono" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/saul-dev/" class="link-icono" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </div>
         </div>
     </footer>
 
@@ -268,10 +208,10 @@
 
     <script src="./main.js"></script>
     <script src="./darkMode.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+    </script> -->
 </body>
 
 </html>
