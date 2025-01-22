@@ -147,7 +147,7 @@ body.dark .input-msj {
     gap: 2rem;
     min-height: 40vh;
     margin-top: 6rem;
-    border-bottom: 1px solid var(--bg-line);
+    border-bottom: 2px solid var(--bg-line);
 }
 
 .hero .img-perfil {
