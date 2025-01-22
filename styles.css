@@ -56,6 +56,7 @@ body {
     width: 100%;
     height: 2px;
     background-color: var(--bg-line);
+    display: block;
 }
 
 .container {
@@ -249,6 +250,10 @@ body.dark .input-msj {
 .cards {
     display: grid;
     gap: 2rem;
+}
+
+.card, .card-link {
+    backdrop-filter: blur(10px);
 }
 
 .cards .card {

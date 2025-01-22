@@ -38,6 +38,13 @@
     }
 }
 
+
+@media screen and (max-width: 500px) {
+    .hero { 
+        min-height: 55vh;
+    }
+}
+
 @media screen and (max-width: 375px) {
 
     .hero {
