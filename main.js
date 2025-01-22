@@ -1,15 +1,17 @@
-const nav = document.querySelector(".nav-menu");
-const navToggleBtn = document.querySelector(".menu-toggle");
-const navLinks = document.querySelectorAll(".nav-link");
+const darkToggle = document.querySelector('.mode-toggle')
+const iconSun = document.getElementById('icon-sun')
+const iconMoon = document.getElementById('icon-moon')
+const darkBody = document.getElementById('body')
 
-// navbar toggle function
-const navToggleFunc = function () {
-    nav.classList.toggle('active');
-    navToggleBtn.classList.toggle('active');
-}
 
-navToggleBtn.addEventListener('click', navToggleFunc);
+darkToggle.addEventListener('click', () => {
+    darkBody.classList.toggle('dark')
 
-for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', navToggleFunc);
-}
+    if (darkBody.classList.contains('dark')) {
+        iconSun.style.display = 'none'
+        iconMoon.style.display = 'inline-block'
+    } else {
+        iconSun.style.display = 'inline-block'
+        iconMoon.style.display = 'none'
+    }
+})
