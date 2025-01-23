@@ -43,6 +43,18 @@
     .hero { 
         min-height: 55vh;
     }
+
+    .links-card {
+        flex-wrap: wrap;
+    }
+
+    .links-card .btn-web, .code-link {
+        padding: .5em 1.8em;
+    }
+
+    .links-card .code-link {
+        padding: .5em 1.5em;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -52,10 +64,6 @@
     }
 
     .social-hero {
-        flex-wrap: wrap;
-    }
-
-    .links-card {
         flex-wrap: wrap;
     }
 }
