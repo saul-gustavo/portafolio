@@ -438,7 +438,26 @@ body.dark .input-msj {
     border-radius: 15px;
     background-color: rgba(0, 128, 0, 0.7);
     margin: 1rem auto;
-    opacity: 0;
+    display: none;
+    animation: aparece 5s ease-in-out forwards;
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    75% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .alert-title {
@@ -449,4 +468,5 @@ body.dark .input-msj {
 .alert-title .icono {
     margin-right: 10px;
 }
+
 
