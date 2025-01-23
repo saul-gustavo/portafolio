@@ -48,7 +48,7 @@ body {
     position: fixed;
     top: -30px; 
     left: 0;
-    box-shadow: 0 0 400px 180px #8684fb60;
+    box-shadow: 0 0 400px 90px #8684fb60;
     /* background: radial-gradient(ellipse 40% 70% at 20% -20%,#8684fb60,#000000); */
 }
 
