@@ -2,7 +2,7 @@
 
     .hero {
         flex-direction: column;
-        min-height: 50vh;
+        padding: 3rem 0rem;
     }
 
     .hero .img-perfil {
@@ -40,9 +40,6 @@
 
 
 @media screen and (max-width: 500px) {
-    .hero { 
-        min-height: 55vh;
-    }
 
     .links-card {
         flex-wrap: wrap;
