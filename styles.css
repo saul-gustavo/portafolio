@@ -143,16 +143,16 @@ body.dark .input-msj {
 .hero {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 2rem;
-    min-height: 40vh;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin: 5rem auto 2rem;
+    padding: 2rem 0rem;
     border-bottom: 1px solid var(--bg-line);
 }
 
 .hero .img-perfil {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 50%;
     display: block;
     object-fit: cover;
