@@ -360,6 +360,11 @@ body.dark .input-msj {
     transition: var(--transition);
 }
 
+.card-link .cont-arrow i {
+    transform: rotate(-45deg);
+    font-size: 1rem;
+}
+
 .card-link:hover .cont-arrow {
     display: block;
 }
