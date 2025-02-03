@@ -346,16 +346,22 @@ body.dark .input-msj {
 
 .cards-bottom .card-link {
     color: var(--white);
-}
-
-.card-link:hover {
-    background-color: var(--card-bt);
-}
-
-.cards-bottom .card-bottom{
-    padding: 1em;
+    padding: .8em 1em;
     border: 1px solid var(--border-card);
     border-radius: 10px;
+    position: relative;
+}
+
+.card-link .cont-arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    display: none;
+    transition: var(--transition);
+}
+
+.card-link:hover .cont-arrow {
+    display: block;
 }
 
 .card-bottom .plataforma {
