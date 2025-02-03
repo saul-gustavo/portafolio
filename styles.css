@@ -47,8 +47,8 @@ body {
     z-index: -10;
     position: fixed;
     top: -30px; 
-    left: 0;
-    box-shadow: 0 0 400px 90px #8684fb60;
+    left: 3rem;
+    box-shadow: 0 0 400px 120px #8684fb60;
     /* background: radial-gradient(ellipse 40% 70% at 20% -20%,#8684fb60,#000000); */
 }
 
