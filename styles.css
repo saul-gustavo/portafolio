@@ -173,7 +173,7 @@ body.dark .input-msj {
 }
 
 .hero .hero-text .hero-title {
-    font-size: clamp(1.5rem, 10vw, 3rem);
+    font-size: clamp(1.5rem, 10vw, 2rem);
     letter-spacing: 2px;
 }
 
