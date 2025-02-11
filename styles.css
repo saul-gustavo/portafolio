@@ -138,6 +138,14 @@ body.dark .input-msj {
     color: var(--black);
 }
 
+body.dark .iconos-con #github-skill {
+    color: var(--black);
+}
+
+body.dark .btn-cv i {
+    color: var(--black);
+}
+
 /* hero seccion */
 
 .hero {
@@ -152,7 +160,7 @@ body.dark .input-msj {
 
 .hero .img-perfil {
     width: 100%;
-    max-width: 180px;
+    max-width: 150px;
     border-radius: 50%;
     display: block;
     object-fit: cover;
@@ -197,19 +205,36 @@ body.dark .input-msj {
 
 .hero .hero-text .social-hero .btn-cv {
     display: inline-block;
-    background-color: var(--btn-bg);
-    padding: 0.6em 1em;
     border-radius: 30px;
-    color: var(--white);
+    font-size: 1.2rem;
     font-family: var(--font-roboto);
+    color: var(--white);
 }
 
-.btn-cv i {
-    margin-left: 5px;
+.btn-send {
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: var(--btn-bg);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-send i {
+    font-size: 1.4rem;
+}
+
+.btn-send:hover {
+    opacity: 0.8;
 }
 
 .btn-web, 
-.code-link, .btn-submit {
+.code-link, .btn-submit,
+.btn-send {
     font-family: var(--font-mont);
     font-weight: 500;
 }
@@ -233,6 +258,7 @@ body.dark .input-msj {
 }
 
 /* sobre mi seccion  */
+
 .sobre-mi {
     padding: 3em 0;
 }
@@ -383,6 +409,51 @@ body.dark .input-msj {
 .card-bottom .plat-name {
     border: 1px solid var(--border-card);
     padding: 5px;
+}
+
+/* seccion skills */
+
+.skills {
+    padding: 2em 0em;
+}
+
+.skills .title-skills {
+    margin-bottom: 2rem;
+}
+
+.imgs-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.iconos-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.icon-skill {
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: cover;
+}
+
+.iconos-con i {
+    font-size: 2rem;
+}
+
+.iconos-con .name-skill {
+    font-family: var(--font-mont);
+    font-weight: 500;
+}
+
+.iconos-con:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* contacto seccion */
