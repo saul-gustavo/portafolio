@@ -57,7 +57,7 @@ body {
     position: absolute;
     right: 2rem;
     bottom: -2rem;
-    box-shadow: 0 0 400px 120px rgb(1, 90, 1);
+    box-shadow: 0 0 400px 120px rgba(1, 90, 1, 0.35);
 }
 
 .container {
