@@ -197,7 +197,7 @@ body.dark {
 }
 
 .hero-cont {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 1rem;
 }
@@ -218,26 +218,26 @@ body.dark {
 }
 
 .btn-cv {
-    color: var(--color-icono-hero);
-    font-size: 1.5rem;
     transition: var(--transition);
+    display: flex;
 }
 
-.btn-web, 
-.code-link, .btn-submit,
+.btn-cv .svg-cv {
+    fill: var(--color-text-white);
+}
+
+.btn-submit,
 .btn-send {
     font-family: var(--font-mont);
     font-weight: 500;
 }
 
-.btn-web,
-.code-link, .card-link, 
+.card-link, 
 .btn-submit {
     transition: var(--transition);
 }
 
-.btn-cv:hover,
-.social-hero .link-icono:hover {
+.btn-cv:hover {
     opacity: 0.8;
 }
 
