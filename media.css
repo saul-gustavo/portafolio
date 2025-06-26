@@ -53,7 +53,9 @@
 
     .sobre-mi, .skills,
     .proyectos, .footer {
-        scroll-margin-top: 200px;
+        position: relative;
+        padding-top: 50px;
+        margin-top: -50px;
     }
 
     .title {
