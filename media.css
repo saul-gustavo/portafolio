@@ -36,7 +36,6 @@
     .hero {
         flex-direction: column-reverse;
         justify-content: center;
-        min-height: 90vh;
     }
 
     .hero-text {
