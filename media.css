@@ -51,6 +51,11 @@
         max-width: 280px;
     }
 
+    .sobre-mi, .skills,
+    .proyectos, .footer {
+        scroll-margin-top: 200px;
+    }
+
     .title {
         text-align: center;
     }
