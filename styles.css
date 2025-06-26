@@ -17,7 +17,7 @@
     --color-text-white: #fff;
     --color-card-overlay: #fff;
     --color-text-btn: #fff;
-    --color-links: green;
+    --color-links: #058ddc;
 
     /* colores fondo */
     --color-fondo-body: #000000;
@@ -258,7 +258,7 @@ body.dark {
 }
 
 .certificados .cert-a:hover {
-    color: var(--btn-bg);
+    color: var(--color-links);
 }
 
 /* estilos generales */
