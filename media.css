@@ -51,11 +51,8 @@
         max-width: 280px;
     }
 
-    .sobre-mi, .skills,
-    .proyectos, .footer {
-        position: relative;
+    .sobre-mi, .proyectos, .footer {
         padding-top: 50px;
-        margin-top: -50px;
     }
 
     .title {
