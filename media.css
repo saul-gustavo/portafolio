@@ -1,21 +1,70 @@
-@media screen and (max-width: 768px) {
+@media (width <= 1200px) {
+    .header {
+        padding: 1rem;
+    }
+}
 
-    .hero {
+@media (width <= 768px) {
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
         flex-direction: column;
-        padding: 3rem 0rem;
+        justify-content: center;
+        gap: 30px;
+        width: 200px;
+        height: 300px;
+        transition: scale(0.9);
+        transform-origin: right;
+        opacity: 0;
+        pointer-events: none;
     }
 
-    .hero-title, .hero-sub {
+    .toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        min-height: 90vh;
+    }
+
+    .hero-text {
         text-align: center;
     }
 
-    .hero .hero-text .social-hero {
+    .hero-cont {
         justify-content: center;
-        gap: 1rem;
+    }
+
+    .hero .imagen-hero .img-perfil {
+        max-width: 280px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .sobre-mi .text-sobre {
+        flex-direction: column;
     }
 
     .card {
         flex-direction: column;
+    }
+
+    .card .card-tools {
+        justify-content: center;
     }
 
     .card-title, .card-sub,
@@ -25,38 +74,34 @@
         justify-content: center;
     }
 
-    .cards-bottom {
-        grid-template-columns: 1fr;
-    }
-
     .footer .inputs-top {
         flex-direction: column;
     }
 }
 
-
-@media screen and (max-width: 500px) {
-
-    .links-card {
-        flex-wrap: wrap;
+@media (width <= 550px) {
+    .header {
+        left: 0;
+        transform: none;
     }
 
-    .links-card .btn-web, .code-link {
-        padding: .5em 1.8em;
+    .hero .imagen-hero .img-perfil {
+        max-width: 220px;
     }
 
-    .links-card .code-link {
-        padding: .5em 1.5em;
-    }
-}
-
-@media screen and (max-width: 375px) {
-
-    .hero {
-        padding: 2rem 0rem;
+    .sobre-mi .text-sobre {
+        grid-template-columns: 1fr;
     }
 
-    .social-hero {
-        flex-wrap: wrap;
+    .sobre-mi .text-sobre .sub-sobre, .cert-a{
+        text-align: center;
+    }
+
+    .proyectos .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card .card-imagen .img-card {
+        height: 300px;
     }
 }
