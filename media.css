@@ -107,4 +107,8 @@
     .card .card-imagen .img-card {
         height: 300px;
     }
+
+    .footer .form-contact {
+        width: 100%;
+    }
 }

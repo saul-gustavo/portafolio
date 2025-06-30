@@ -18,6 +18,7 @@
     --color-card-overlay: #fff;
     --color-text-btn: #fff;
     --color-links: #058ddc;
+    --color-focus-input: #ffff;
 
     /* colores fondo */
     --color-fondo-body: #000000;
@@ -154,6 +155,7 @@ body.dark {
     --color-icono-hero: #000000;
     --color-toggle-line:#000000;
     --color-nav-menu-active: #ffff;
+    --color-focus-input: #1f1f1f;
 }
 
 /* hero seccion */
@@ -277,7 +279,7 @@ body.dark {
 }
 
 .sobre-mi, .skills,
-.proyectos, .footer {
+.proyectos {
     scroll-margin-top: 100px;
 }
 
@@ -325,14 +327,15 @@ body.dark {
 
 /* cards seccion */
 
+.proyectos {
+    min-height: 100vh;
+    padding: 3rem 0;
+}
+
 .proyectos .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
-}
-
-.cards {
-    margin: 2rem 0;
 }
 
 .card {
@@ -426,44 +429,32 @@ body.dark {
 /* contacto seccion */
 
 .footer {
-    padding: 2em 0em 3em;
     position: relative;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
-.footer-contact {
+.footer .foo-title {
+    text-align: center;
+}
+
+.footer .form-contact {
     display: grid;
     gap: 1rem;
+    width: 500px;
 }
 
-.inputs-top {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 20px;
-}
-
-.form-input, .input-msj {
+.footer .form-contact .form-input, 
+.input-msj {
+    padding: 1rem;
     border: none;
     outline: none;
+    background: none;
+    color: var(--color-text-white);
     background-color: var(--color-fondo-input);
-    border-radius: 10px;
-    font-size: 1rem;
-    border: 1px solid var(--border-card);
-    color: var(--color-text-white);
-}
-
-.form-input::placeholder, 
-.input-msj::placeholder {
-    color: var(--color-text-white);
-}
-
-.form-input:focus, 
-.input-msj:focus {
-    opacity: 0.9;
-}
-
-.inputs-top .form-input {
-    width: 100%;
-    padding: 1em;
+    border-radius: 20px;
+    transition: var(--transition);
 }
 
 .input-msj {
@@ -474,12 +465,22 @@ body.dark {
     margin-bottom: 20px;
 }
 
-.btn-submit {
+.form-input:focus,
+.input-msj:focus {
+    box-shadow: 0 0 10px var(--color-focus-input);
+}
+
+.form-input::placeholder,
+.input-msj::placeholder { 
+    font-size: 1rem;
+}
+
+.form-contact .btn-submit {
     border: none;
     border-radius: 30px;
     margin: 0 auto;
     display: block;
-    padding: .8em 4em;
+    padding: 1em 4em;
     background-color: var(--btn-bg);
     cursor: pointer;
     color: var(--color-text-btn);
