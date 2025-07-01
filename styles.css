@@ -169,6 +169,7 @@ body.dark {
 }
 
 .hero-span,
+.hero-p,
 .sub-sobre, 
 .card-sub, 
 .form-input,
@@ -183,10 +184,15 @@ body.dark {
 }
 
 .hero .hero-text .hero-title {
-    font-size: clamp(1.5rem, 10vw, 2rem);
+    font-size: clamp(1.5rem, 10vw, 3rem);
     letter-spacing: 2px;
     font-weight: 700;
     font-family: var(--font-roboto);
+}
+
+.hero .hero-text .hero-p {
+    max-width: 85%;
+    line-height: 1.6;
 }
 
 .hero .imagen-hero .img-perfil {
@@ -487,6 +493,27 @@ body.dark {
 }
 
 .btn-submit:hover {
+    opacity: 0.8;
+}
+
+.footer-social {
+    padding: 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-social .link-icono {
+    text-decoration: none;
+    color: var(--color-text-white);
+    transition: var(--transition);
+}
+
+.link-icono > i {
+    font-size: 1.7rem;
+}
+
+.link-icono:hover {
     opacity: 0.8;
 }
 
