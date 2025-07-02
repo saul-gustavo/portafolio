@@ -437,18 +437,26 @@ body.dark {
 .footer {
     position: relative;
     min-height: 100vh;
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .footer .foo-title {
     text-align: center;
 }
 
+.footer .footer-contact {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .footer .form-contact {
     display: grid;
     gap: 1rem;
-    width: 500px;
+    width: 100%;
 }
 
 .footer .form-contact .form-input, 
