@@ -81,6 +81,20 @@
         justify-content: center;
     }
 
+    .proyectos .cards {
+        width: 100%;
+    }
+
+    .proyectos .cards .card {
+        margin-bottom: 1rem;
+    }
+
+    .proyectos .cards .text-visible {
+        position: relative;
+        opacity: 1;
+        border-radius: 0;
+    }
+
     .footer .inputs-top {
         flex-direction: column;
     }
