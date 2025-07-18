@@ -172,6 +172,7 @@ body.dark {
 .hero-p,
 .sub-sobre, 
 .card-sub, 
+.foo-text-contact,
 .form-input,
 .input-msj {
     font-family: var(--font-roboto);
@@ -281,7 +282,7 @@ body.dark {
     font-size: clamp(1.5rem, 10vw, 1rem);
     font-family: var(--font-roboto);
     font-weight: 500;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .sobre-mi, .skills,
@@ -447,10 +448,15 @@ body.dark {
     text-align: center;
 }
 
+.footer .foo-text-contact {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .footer .footer-contact {
     width: 100%;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .footer .form-contact {
