@@ -1,314 +1,477 @@
 <!-- Este archivo se creo el dia lunes 28 de octubre del 2024 a las 2:13pm, portafolio personal -->
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="saul gustavo A. S. portafolio web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="saul gustavo A. S. portafolio web" />
     <!-- styles CSS3 -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <!-- Responsive -->
-    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./media.css" />
     <!-- iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/logo-2.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo-2.jpg" type="image/x-icon" />
     <!-- Animaciones -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>Portafolio Saul Gustavo A. S. | Web</title>
-</head>
+  </head>
 
-<body id="body">
+  <body id="body">
     <!-- seccion header y nav-->
     <header class="header">
-        <nav class="nav">
-            <img src="./assets/logo-2.jpg" alt="logo imagen" class="img-logo">
-            <ul class="nav-menu">
-                <li class="nav-li"><a href="#inicio" class="nav-a">Inicio</a></li>
-                <li class="nav-li"><a href="#sobre" class="nav-a">Sobre mi</a></li>
-                <li class="nav-li"><a href="#proyectos" class="nav-a">Proyectos</a></li>
-                <li class="nav-li"><a href="#contacto" class="nav-a">Contacto</a></li>
-                <div class="mode-toggle">
-                    <i class="fa-solid fa-moon" id="icon-moon"></i>
-                    <i class="fa-solid fa-sun" id="icon-sun"></i>
-                </div>
-            </ul>
-            <button class="toggle">
-                <span class="line one"></span>
-                <span class="line two"></span>
-                <span class="line three"></span>
-            </button>
-        </nav>
+      <nav class="nav">
+        <img src="./assets/logo-2.jpg" alt="logo imagen" class="img-logo" />
+        <ul class="nav-menu">
+          <li class="nav-li"><a href="#inicio" class="nav-a">Inicio</a></li>
+          <li class="nav-li"><a href="#sobre" class="nav-a">Sobre mi</a></li>
+          <li class="nav-li">
+            <a href="#proyectos" class="nav-a">Proyectos</a>
+          </li>
+          <li class="nav-li"><a href="#contacto" class="nav-a">Contacto</a></li>
+          <div class="mode-toggle">
+            <i class="fa-solid fa-moon" id="icon-moon"></i>
+            <i class="fa-solid fa-sun" id="icon-sun"></i>
+          </div>
+        </ul>
+        <button class="toggle">
+          <span class="line one"></span>
+          <span class="line two"></span>
+          <span class="line three"></span>
+        </button>
+      </nav>
     </header>
 
     <!-- seccion hero -->
 
     <section class="hero container" id="inicio">
-         <div class="hero-text">
-            <h1 class="hero-title">¡Hola, soy Saúl!</h1>
-            <span class="hero-span">Desarrollador Web Frontend y Diseñador UX/UI</span>
-            <p class="hero-p">Soy un estudiante que tiene un efoque en la creacion de interfaces minimalistas, funcionales y centradas en el usuario.</p>
-            <div class="hero-cont">
-                <a href="#contacto" class="btn-send">Contactame</a>
-                <div class="content-cv">
-                    <a href="./assets/saul-cv.pdf" class="btn-cv" target="_blank">
-                        <svg class="svg-cv" width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90323 2.5C6.86803 2.5 5.87522 2.88631 5.14323 3.57394C4.41123 4.26158 4 5.19421 4 6.16667V24.8333C4 25.8058 4.41123 26.7384 5.14323 27.4261C5.87522 28.1137 6.86803 28.5 7.90323 28.5H22.0968C23.132 28.5 24.1248 28.1137 24.8568 27.4261C25.5888 26.7384 26 25.8058 26 24.8333V10.124C26 9.616 25.824 9.12267 25.4975 8.71733L21.2423 3.42667C21.0108 3.13882 20.7114 2.90533 20.3676 2.74454C20.0238 2.58376 19.645 2.50005 19.2609 2.5H7.90323ZM6.12903 6.16667C6.12903 5.24667 6.92387 4.5 7.90323 4.5H18.1935V10.3627C18.1935 10.9147 18.6705 11.3627 19.2581 11.3627H23.871V24.8333C23.871 25.7533 23.0761 26.5 22.0968 26.5H7.90323C6.92387 26.5 6.12903 25.7533 6.12903 24.8333V6.16667Z"/>
-                            <path d="M19.6875 16.75C19.6875 16.5014 19.5887 16.2629 19.4129 16.0871C19.2371 15.9113 18.9986 15.8125 18.75 15.8125H11.25C11.0014 15.8125 10.7629 15.9113 10.5871 16.0871C10.4113 16.2629 10.3125 16.5014 10.3125 16.75C10.3125 16.9986 10.4113 17.2371 10.5871 17.4129C10.7629 17.5887 11.0014 17.6875 11.25 17.6875H18.75C18.9986 17.6875 19.2371 17.5887 19.4129 17.4129C19.5887 17.2371 19.6875 16.9986 19.6875 16.75ZM19.6875 21.75C19.6875 21.5014 19.5887 21.2629 19.4129 21.0871C19.2371 20.9113 18.9986 20.8125 18.75 20.8125H11.25C11.0014 20.8125 10.7629 20.9113 10.5871 21.0871C10.4113 21.2629 10.3125 21.5014 10.3125 21.75C10.3125 21.9986 10.4113 22.2371 10.5871 22.4129C10.7629 22.5887 11.0014 22.6875 11.25 22.6875H18.75C18.9986 22.6875 19.2371 22.5887 19.4129 22.4129C19.5887 22.2371 19.6875 21.9986 19.6875 21.75Z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="hero-text">
+        <h1 class="hero-title">¡Hola, soy Saúl!</h1>
+        <span class="hero-span"
+          >Desarrollador Web Frontend y Diseñador UX/UI</span
+        >
+        <p class="hero-p">
+          Soy un estudiante que tiene un efoque en la creacion de interfaces
+          minimalistas, funcionales y centradas en el usuario.
+        </p>
+        <div class="hero-cont">
+          <a href="#contacto" class="btn-send">Contactame</a>
+          <div class="content-cv">
+            <a href="./assets/saul-cv.pdf" class="btn-cv" target="_blank">
+              <svg
+                class="svg-cv"
+                width="30"
+                height="31"
+                viewBox="0 0 30 31"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.90323 2.5C6.86803 2.5 5.87522 2.88631 5.14323 3.57394C4.41123 4.26158 4 5.19421 4 6.16667V24.8333C4 25.8058 4.41123 26.7384 5.14323 27.4261C5.87522 28.1137 6.86803 28.5 7.90323 28.5H22.0968C23.132 28.5 24.1248 28.1137 24.8568 27.4261C25.5888 26.7384 26 25.8058 26 24.8333V10.124C26 9.616 25.824 9.12267 25.4975 8.71733L21.2423 3.42667C21.0108 3.13882 20.7114 2.90533 20.3676 2.74454C20.0238 2.58376 19.645 2.50005 19.2609 2.5H7.90323ZM6.12903 6.16667C6.12903 5.24667 6.92387 4.5 7.90323 4.5H18.1935V10.3627C18.1935 10.9147 18.6705 11.3627 19.2581 11.3627H23.871V24.8333C23.871 25.7533 23.0761 26.5 22.0968 26.5H7.90323C6.92387 26.5 6.12903 25.7533 6.12903 24.8333V6.16667Z"
+                />
+                <path
+                  d="M19.6875 16.75C19.6875 16.5014 19.5887 16.2629 19.4129 16.0871C19.2371 15.9113 18.9986 15.8125 18.75 15.8125H11.25C11.0014 15.8125 10.7629 15.9113 10.5871 16.0871C10.4113 16.2629 10.3125 16.5014 10.3125 16.75C10.3125 16.9986 10.4113 17.2371 10.5871 17.4129C10.7629 17.5887 11.0014 17.6875 11.25 17.6875H18.75C18.9986 17.6875 19.2371 17.5887 19.4129 17.4129C19.5887 17.2371 19.6875 16.9986 19.6875 16.75ZM19.6875 21.75C19.6875 21.5014 19.5887 21.2629 19.4129 21.0871C19.2371 20.9113 18.9986 20.8125 18.75 20.8125H11.25C11.0014 20.8125 10.7629 20.9113 10.5871 21.0871C10.4113 21.2629 10.3125 21.5014 10.3125 21.75C10.3125 21.9986 10.4113 22.2371 10.5871 22.4129C10.7629 22.5887 11.0014 22.6875 11.25 22.6875H18.75C18.9986 22.6875 19.2371 22.5887 19.4129 22.4129C19.5887 22.2371 19.6875 21.9986 19.6875 21.75Z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="imagen-hero">
-            <img src="./assets/imagen-perfil.jpg" alt="imagen perfil" class="img-perfil">
-        </div>
+      </div>
+      <div class="imagen-hero">
+        <img
+          src="./assets/imagen-perfil.jpg"
+          alt="imagen perfil"
+          class="img-perfil"
+        />
+      </div>
     </section>
 
     <!-- seccion sobre mi -->
 
     <div class="sobre-mi container" id="sobre">
-        <h1 class="title-sobre title">Sobre mí</h1>
-        <div class="text-sobre mode">
-            <p class="sub-sobre">
-                Estudiante de Desarrollo Web Frontend y Diseño UX/UI, con enfoque en la creación de
-                interfaces minimalistas, funcionales y centradas en el usuario. Llevo un aprendizaje continuo y aplico
-                mis conocimientos para mejorar tanto la experiencia web como la usabilidad. Busco participar en
-                proyectos innovadores donde pueda integrar diseño y tecnología para ofrecer soluciones efectivas y
-                atractivas.
-            </p>
-            <div class="certificados">
-                <a href="https://www.freecodecamp.org/certification/SaulGustavo/responsive-web-design" target="_blank" class="cert-a">Certificado Diseño Responsivo con HTML5 y CSS3 -- FreeCodeCamp</a>
-                <a href="https://www.freecodecamp.org/certification/SaulGustavo/javascript-algorithms-and-data-structures" target="_blank" class="cert-a">Certificado Algoritmos y Estructura de Datos con JavaScript -- FreeCodeCamp</a>
-            </div>
+      <h1 class="title-sobre title">Sobre mí</h1>
+      <div class="text-sobre mode">
+        <p class="sub-sobre">
+          Estudiante de Desarrollo Web Frontend y Diseño UX/UI, con enfoque en
+          la creación de interfaces minimalistas, funcionales y centradas en el
+          usuario. Llevo un aprendizaje continuo y aplico mis conocimientos para
+          mejorar tanto la experiencia web como la usabilidad. Busco participar
+          en proyectos innovadores donde pueda integrar diseño y tecnología para
+          ofrecer soluciones efectivas y atractivas.
+        </p>
+        <div class="certificados">
+          <a
+            href="https://www.freecodecamp.org/certification/SaulGustavo/responsive-web-design"
+            target="_blank"
+            class="cert-a"
+            >Certificado Diseño Responsivo con HTML5 y CSS3 -- FreeCodeCamp</a
+          >
+          <a
+            href="https://www.freecodecamp.org/certification/SaulGustavo/javascript-algorithms-and-data-structures"
+            target="_blank"
+            class="cert-a"
+            >Certificado Algoritmos y Estructura de Datos con JavaScript --
+            FreeCodeCamp</a
+          >
         </div>
+      </div>
     </div>
 
     <!-- seccion skills -->
 
     <div class="skills container">
-        <h1 class="title-skills title">Tecnologías</h1>
-        <div class="imgs-content">
-            <div class="iconos-con">
-                <img src="./assets/icons8-html.svg" alt="icono html" class="icon-skill">
-                <span class="name-skill">HTML</span>
-            </div>
-            <div class="iconos-con">
-                <img src="./assets/icono-css.svg" alt="icono css3" class="icon-skill">
-                <span class="name-skill">CSS3</span>
-            </div>
-            <div class="iconos-con">
-                <img src="./assets/icon-javascript.svg" alt="icono javascript" class="icon-skill">
-                <span class="name-skill">JavaScript</span>
-            </div>
-            <div class="iconos-con">
-                <i class="fa-brands fa-github" id="github-skill"></i>
-                <span class="name-skill">GitHub</span>
-            </div>
-            <div class="iconos-con">
-                <img src="./assets/icon-react.svg" alt="icono react" class="icon-skill">
-                <span class="name-skill">React</span>
-            </div>
-            <div class="iconos-con">
-                <img src="./assets/icons8-figma.svg" alt="icono figma" class="icon-skill">
-                <span class="name-skill">Figma</span>
-            </div>
-        </div>
+      <h1 class="title-skills title">Tecnologías</h1>
+      <div class="imgs-content">
+        <img src="./assets/icons8-html.svg" alt="icono html" class="icon-img" />
+        <img src="./assets/icono-css.svg" alt="icono css" class="icon-img" />
+        <img
+          src="./assets/icon-javascript.svg"
+          alt="icono javascript"
+          class="icon-img"
+        />
+        <img
+          src="./assets/icon-github-white.svg"
+          alt="icono github"
+          class="icon-img"
+        />
+        <img src="./assets/icon-react.svg" alt="icono react" class="icon-img" />
+        <img
+          src="./assets/tailwindcss-icono.svg"
+          alt="icono tailwindcss"
+          class="icon-img"
+        />
+      </div>
     </div>
 
     <!-- seccion proyectos -->
 
     <section class="proyectos container" id="proyectos">
-        <h1 class="pro-title title">Proyectos</h1>
+      <h1 class="pro-title title">Proyectos</h1>
 
-        <div class="cards">
-            <a href="https://saul-gustavo.github.io/fylo-landing-page-layout/" target="_blank" class="card-link">
-                <article class="card">
-                    <div class="card-imagen">
-                        <img src="./assets/fylo-desktop-preview.jpg" alt="fylo landing page imagen" class="img-card">
-                    </div>
-                    <div class="text-visible">
-                        <h3 class="card-title">Fylo Landing Page</h3>
-                        <p class="card-sub">
-                            Este proyecto cuenta con diseño responsivo, adaptable a cualquier dispositivo y una validación
-                            de correo con JavaScript
-                        </p>
-                        <div class="card-tools">
-                            <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
-                            <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                            <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
-                        </div>
-                    </div>
-                </article>
-            </a>
+      <div class="cards">
+        <a
+          href="https://saul-gustavo.github.io/fylo-landing-page-layout/"
+          target="_blank"
+          class="card-link"
+        >
+          <article class="card">
+            <div class="card-imagen">
+              <img
+                src="./assets/fylo-desktop-preview.jpg"
+                alt="fylo landing page imagen"
+                class="img-card"
+              />
+            </div>
+            <div class="text-visible">
+              <h3 class="card-title">Fylo Landing Page</h3>
+              <p class="card-sub">
+                Este proyecto cuenta con diseño responsivo, adaptable a
+                cualquier dispositivo y una validación de correo con JavaScript
+              </p>
+              <div class="card-tools">
+                <img
+                  src="./assets/icons8-html.svg"
+                  alt="icono html"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icons8-css3.svg"
+                  alt="icono css"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icon-javascript.svg"
+                  alt="icono JavaScript"
+                  class="tool-img"
+                />
+              </div>
+            </div>
+          </article>
+        </a>
 
-             <a href="https://saul-gustavo.github.io/Newsletter-sign-up/" target="_blank" class="card-link">
-                <article class="card">
-                    <div class="card-imagen">
-                        <img src="./assets/newsletter-sign.jpg" alt="newslatter sign up imagen" class="img-card">
-                    </div>
-                    <div class="text-visible">
-                        <h3 class="card-title">Newslatter Sign Up</h3>
-                        <p class="card-sub">
-                            Sección para suscribirse en un Newsletter. Este proyecto cuenta con una validación de correo
-                        electrónico con JavaScript.
-                        </p>
-                        <div class="card-tools">
-                            <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
-                            <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                            <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
-                        </div>
-                    </div>
-                </article>
-            </a>
+        <a
+          href="https://saul-gustavo.github.io/Newsletter-sign-up/"
+          target="_blank"
+          class="card-link"
+        >
+          <article class="card">
+            <div class="card-imagen">
+              <img
+                src="./assets/newsletter-sign.jpg"
+                alt="newslatter sign up imagen"
+                class="img-card"
+              />
+            </div>
+            <div class="text-visible">
+              <h3 class="card-title">Newslatter Sign Up</h3>
+              <p class="card-sub">
+                Sección para suscribirse en un Newsletter. Este proyecto cuenta
+                con una validación de correo electrónico con JavaScript.
+              </p>
+              <div class="card-tools">
+                <img
+                  src="./assets/icons8-html.svg"
+                  alt="icono html"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icons8-css3.svg"
+                  alt="icono css"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icon-javascript.svg"
+                  alt="icono JavaScript"
+                  class="tool-img"
+                />
+              </div>
+            </div>
+          </article>
+        </a>
 
-            <a href="https://saul-gustavo.github.io/insure-landing-page/" target="_blank" class="card-link">
-                <article class="card">
-                    <div class="card-imagen">
-                        <img src="./assets/insure-landing-page.jpg" alt="insure landing page imagen" class="img-card">
-                    </div>
-                    <div class="text-visible">
-                        <h3 class="card-title">Insure Landing Page</h3>
-                        <p class="card-sub">
-                            Este proyecto fue creado con React, cuenta con diseño
-                        responsivo, adaptable a cualquier tamaño de pantalla.
-                        </p>
-                        <div class="card-tools">
-                            <img src="./assets/icon-react.svg" alt="icon react" class="tool-img">
-                            <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                        </div>
-                    </div>
-                </article>
-            </a>
+        <a
+          href="https://saul-gustavo.github.io/insure-landing-page/"
+          target="_blank"
+          class="card-link"
+        >
+          <article class="card">
+            <div class="card-imagen">
+              <img
+                src="./assets/insure-landing-page.jpg"
+                alt="insure landing page imagen"
+                class="img-card"
+              />
+            </div>
+            <div class="text-visible">
+              <h3 class="card-title">Insure Landing Page</h3>
+              <p class="card-sub">
+                Este proyecto fue creado con React, cuenta con diseño
+                responsivo, adaptable a cualquier tamaño de pantalla.
+              </p>
+              <div class="card-tools">
+                <img
+                  src="./assets/icon-react.svg"
+                  alt="icon react"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icons8-css3.svg"
+                  alt="icono css"
+                  class="tool-img"
+                />
+              </div>
+            </div>
+          </article>
+        </a>
 
-            <a href="#" target="_blank" class="card-link">
-                <article class="card">
-                    <div class="card-imagen">
-                        <img src="./assets/fylo-desktop-preview.jpg" alt="fylo landing page" class="img-card">
-                    </div>
-                    <div class="text-visible">
-                        <h3 class="card-title">Fylo Landing Page</h3>
-                        <p class="card-sub">
-                            Este proyecto cuenta con diseño responsivo, adaptable a cualquier dispositivo y una validación
-                            de correo con JavaScript
-                        </p>
-                        <div class="card-tools">
-                            <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
-                            <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                            <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
-                        </div>
-                    </div>
-                </article>
-            </a>
+        <a href="#" target="_blank" class="card-link">
+          <article class="card">
+            <div class="card-imagen">
+              <img
+                src="./assets/fylo-desktop-preview.jpg"
+                alt="fylo landing page"
+                class="img-card"
+              />
+            </div>
+            <div class="text-visible">
+              <h3 class="card-title">Fylo Landing Page</h3>
+              <p class="card-sub">
+                Este proyecto cuenta con diseño responsivo, adaptable a
+                cualquier dispositivo y una validación de correo con JavaScript
+              </p>
+              <div class="card-tools">
+                <img
+                  src="./assets/icons8-html.svg"
+                  alt="icono html"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icons8-css3.svg"
+                  alt="icono css"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icon-javascript.svg"
+                  alt="icono JavaScript"
+                  class="tool-img"
+                />
+              </div>
+            </div>
+          </article>
+        </a>
 
-            <a href="https://saul-gustavo.github.io/proyectos-frontendmentor/" class="card-link-bt" target="_blank">
-                    <article class="card-bottom">
-                        <h3 class="card-title">Proyectos FrontendMentor.io</h3>
-                        <p class="card-sub">Estos son todos los proyectos que he terminado de la plataforma
-                            FrontendMentor.io</p>
-                        <div class="plataforma">
-                            <p class="plat-name">FrontendMentor.io</p>
-                            <div class="card-tools">
-                                <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
-                                <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                                <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
-                            </div>
-                        </div>
-                        <div class="cont-arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </article>
-                </a>
+        <a
+          href="https://saul-gustavo.github.io/proyectos-frontendmentor/"
+          class="card-link-bt"
+          target="_blank"
+        >
+          <article class="card-bottom">
+            <h3 class="card-title">Proyectos FrontendMentor.io</h3>
+            <p class="card-sub">
+              Estos son todos los proyectos que he terminado de la plataforma
+              FrontendMentor.io
+            </p>
+            <div class="plataforma">
+              <p class="plat-name">FrontendMentor.io</p>
+              <div class="card-tools">
+                <img
+                  src="./assets/icons8-html.svg"
+                  alt="icono html"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icons8-css3.svg"
+                  alt="icono css"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icon-javascript.svg"
+                  alt="icono JavaScript"
+                  class="tool-img"
+                />
+              </div>
+            </div>
+            <div class="cont-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </article>
+        </a>
 
-                <a href="https://saul-gustavo.github.io/faq-accordion-page/" class="card-link-bt" target="_blank">
-                    <article class="card-bottom">
-                        <h3 class="card-title">FAQ Acordion</h3>
-                        <p class="card-sub">Sección de preguntas con un diseño de acordeón. El diseño se adapta a
-                            dispositivos móviles.</p>
-                        <div class="plataforma">
-                            <p class="plat-name">FrontendMentor.io</p>
-                            <div class="card-tools">
-                                <img src="./assets/icons8-html.svg" alt="icono html" class="tool-img">
-                                <img src="./assets/icons8-css3.svg" alt="icono css" class="tool-img">
-                                <img src="./assets/icon-javascript.svg" alt="icono JavaScript" class="tool-img">
-                            </div>
-                        </div>
-                        <div class="cont-arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </article>
-                </a>
-        </div>
-    </section> 
-
+        <a
+          href="https://saul-gustavo.github.io/faq-accordion-page/"
+          class="card-link-bt"
+          target="_blank"
+        >
+          <article class="card-bottom">
+            <h3 class="card-title">FAQ Acordion</h3>
+            <p class="card-sub">
+              Sección de preguntas con un diseño de acordeón. El diseño se
+              adapta a dispositivos móviles.
+            </p>
+            <div class="plataforma">
+              <p class="plat-name">FrontendMentor.io</p>
+              <div class="card-tools">
+                <img
+                  src="./assets/icons8-html.svg"
+                  alt="icono html"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icons8-css3.svg"
+                  alt="icono css"
+                  class="tool-img"
+                />
+                <img
+                  src="./assets/icon-javascript.svg"
+                  alt="icono JavaScript"
+                  class="tool-img"
+                />
+              </div>
+            </div>
+            <div class="cont-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
 
     <footer class="footer container" id="contacto" data-aos="fade-up">
-        <h1 class="foo-title title">Contáctame</h1>
-        <p class="foo-text-contact">
-            ¿Tienes un proyecto en mente? <br> ¡Me encantaría colaborar contigo! No dudes en enviarme un mensaje a través del formulario.
-        </p>
-        <div class="footer-contact">
-            <form class="form-contact" name="contact-form">
-                <input type="text" class="form-input input-text" name="user_name" placeholder="Nombre" required>
-                <input type="email" class="form-input input-email" name="user_email" placeholder="Correo electrónico" required>
-                <textarea name="message" id="mensaje" class="input-msj" placeholder="Mensaje"></textarea>
-                <button class="btn-submit" type="submit">Enviar</button>
-            </form>
-            <div class="footer-social">
-                <a href="https://github.com/Saul-Gustavo" target="_blank" class="link-icono">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/saul-gustavo-alcantar-s-015bb12a2" target="_blank"
-                    class="link-icono">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
+      <h1 class="foo-title title">Contáctame</h1>
+      <p class="foo-text-contact">
+        ¿Tienes un proyecto en mente? <br />
+        ¡Me encantaría colaborar contigo! No dudes en enviarme un mensaje a
+        través del formulario.
+      </p>
+      <div class="footer-contact">
+        <form class="form-contact" name="contact-form">
+          <input
+            type="text"
+            class="form-input input-text"
+            name="user_name"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            type="email"
+            class="form-input input-email"
+            name="user_email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <textarea
+            name="message"
+            id="mensaje"
+            class="input-msj"
+            placeholder="Mensaje"
+          ></textarea>
+          <button class="btn-submit" type="submit">Enviar</button>
+        </form>
+        <div class="footer-social">
+          <a
+            href="https://github.com/Saul-Gustavo"
+            target="_blank"
+            class="link-icono"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saul-gustavo-alcantar-s-015bb12a2"
+            target="_blank"
+            class="link-icono"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
+      </div>
 
-        <div class="alert-w">
-            <h4 class="alert-title">
-                <span class="icono"><i class="fa-solid fa-check"></i></span>
-                Correo enviado
-            </h4>
-        </div>
+      <div class="alert-w">
+        <h4 class="alert-title">
+          <span class="icono"><i class="fa-solid fa-check"></i></span>
+          Correo enviado
+        </h4>
+      </div>
     </footer>
-
 
     <script src="./main.js"></script>
     <script src="./inputs.js"></script>
     <!-- Email.js servicio -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <script type="text/javascript">
-        emailjs.init('sBH1W-4Ob-aA2EjVf')
+      emailjs.init("sBH1W-4Ob-aA2EjVf");
     </script>
 
     <script>
-        const navToggle = document.querySelector('.toggle');
-        const navBar = document.querySelector('.nav-menu');
-        const navLinks = document.querySelectorAll('.nav-a');
+      const navToggle = document.querySelector(".toggle");
+      const navBar = document.querySelector(".nav-menu");
+      const navLinks = document.querySelectorAll(".nav-a");
 
-        navToggle.addEventListener('click', () => {
-        navBar.classList.toggle('active')
-        navToggle.classList.toggle('active')
+      navToggle.addEventListener("click", () => {
+        navBar.classList.toggle("active");
+        navToggle.classList.toggle("active");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          navBar.classList.remove("active");
+          navToggle.classList.remove("active");
+
+          const targetId = link.getAttribute("href");
+          const targetSection = document.querySelector(targetId);
+          targetSection.scrollIntoView({ behavior: "smooth" });
         });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                navBar.classList.remove('active');
-                navToggle.classList.remove('active');
-
-                const targetId = link.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                targetSection.scrollIntoView( {behavior: 'smooth'} )
-            })
-        })
-
-
+      });
     </script>
-</body>
-
+  </body>
 </html>
