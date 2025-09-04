@@ -314,6 +314,10 @@ body.dark {
   max-width: 60px;
 }
 
+.icono-skill > i {
+  font-size: 3rem;
+}
+
 /* cards seccion */
 
 .proyectos {
